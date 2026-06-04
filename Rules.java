@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 public class Rules {
 
-    private static final TensorLeftRule tensorLeft = new TensorLeftRule();
-    private static final PlusLeftRule plusLeft = new PlusLeftRule();
-    private static final ParLeftRule parLeft = new ParLeftRule();
-    private static final WithLeftRule withLeft = new WithLeftRule();
-    private static final ImplicationLeftRule impLeft = new ImplicationLeftRule();
+    private static final TensorLeftRule tensorLeft = new TensorLeftRule(); //⊗
+    private static final PlusLeftRule plusLeft = new PlusLeftRule(); //⊕
+    private static final ParLeftRule parLeft = new ParLeftRule(); //⅋
+    private static final WithLeftRule withLeft = new WithLeftRule(); //&
+    private static final ImplicationLeftRule impLeft = new ImplicationLeftRule(); //⊸
     public static List<Sequent> tensorLeft(Sequent s) {
         return tensorLeft.apply(s);
     }
